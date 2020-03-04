@@ -13,10 +13,10 @@ const Routes = () => {
                 <Switch>
                     <div>
                         
-                        <Route exact path='/'component={Home} />
-                        <Route path='/dashboard/mymeetings' exact component={Dashboard} />
-                        <Route path='/dashboard/meetingrooms' exact component={Dashboard} />
-                        <Route path='/dashboard/createmeeting' exact component={Dashboard} />
+                        <Route exact path= '/' component={Home} />
+                        <Route path= '/dashboard/mymeetings'  component={Dashboard} />
+                        <Route path= '/dashboard/meetingrooms' component={Dashboard} />
+                        <Route path= '/dashboard/createmeeting'  component={Dashboard} />
                     </div>
                 </Switch>
             </Router>
