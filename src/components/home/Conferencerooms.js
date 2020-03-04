@@ -78,7 +78,7 @@ export const Marketingroom = () => {
                 <Button
                     name="View details"
                     className="viewdetails"
-                    //  link='/roomdetails'
+                     link=""
                     click={getMarketingRoom}
                 />
             </div>
@@ -147,6 +147,7 @@ export const Salesroom = () => {
                 <Button
                     name="View details"
                     className="viewdetails"
+                    link=""
                     click={getSalesRoom}
                 />
             </div>
@@ -214,7 +215,7 @@ export const Boardroom = () => {
                 <Button
                     name="View details"
                     className="viewdetails"
-                    //  link='/roomdetails'
+                    link=""
                     click={getBoardRoom}
                 />
             </div>
@@ -282,7 +283,7 @@ export const Techroom = () => {
                 <Button
                     name="View details"
                     className="viewdetails"
-                    //  link='/roomdetails'
+                    link=""
                     click={getTechRoom}
                 />
             </div>

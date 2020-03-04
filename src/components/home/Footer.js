@@ -132,7 +132,8 @@ class Subscribe extends React.Component {
                     <Button
                         type="submit"
                         className="subscribe"
-                        name="OK" />
+                        name="OK" 
+                        link=""/>
                 </form>
             </div>
         );

@@ -53,6 +53,7 @@ const Card = (props) => {
                     <Button
                         name='Contact'
                         className='contact'
+                        link=""
                     />
                 </div>
             </div>
