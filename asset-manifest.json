@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/bookroom/static/css/main.268b3fd5.chunk.css",
+    "main.js": "/bookroom/static/js/main.c7cf0716.chunk.js",
+    "main.js.map": "/bookroom/static/js/main.c7cf0716.chunk.js.map",
+    "runtime-main.js": "/bookroom/static/js/runtime-main.82c95afa.js",
+    "runtime-main.js.map": "/bookroom/static/js/runtime-main.82c95afa.js.map",
+    "static/css/2.d90538a7.chunk.css": "/bookroom/static/css/2.d90538a7.chunk.css",
+    "static/js/2.34937949.chunk.js": "/bookroom/static/js/2.34937949.chunk.js",
+    "static/js/2.34937949.chunk.js.map": "/bookroom/static/js/2.34937949.chunk.js.map",
+    "index.html": "/bookroom/index.html",
+    "precache-manifest.47227aee92216ebf23b5392368216b27.js": "/bookroom/precache-manifest.47227aee92216ebf23b5392368216b27.js",
+    "service-worker.js": "/bookroom/service-worker.js",
+    "static/css/2.d90538a7.chunk.css.map": "/bookroom/static/css/2.d90538a7.chunk.css.map",
+    "static/css/main.268b3fd5.chunk.css.map": "/bookroom/static/css/main.268b3fd5.chunk.css.map",
+    "static/js/2.34937949.chunk.js.LICENSE": "/bookroom/static/js/2.34937949.chunk.js.LICENSE",
+    "static/media/dashboard.css": "/bookroom/static/media/Techroom.27d8105f.jpeg",
+    "static/media/home.module.css": "/bookroom/static/media/jonsnow.4032fe0c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82c95afa.js",
+    "static/css/2.d90538a7.chunk.css",
+    "static/js/2.34937949.chunk.js",
+    "static/css/main.268b3fd5.chunk.css",
+    "static/js/main.c7cf0716.chunk.js"
+  ]
+}
