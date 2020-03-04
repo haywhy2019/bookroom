@@ -84,11 +84,11 @@ export const Marketingroom = () => {
             </div>
             {marketingroom.map((room) => {
                 return (
-                    <div class='custommodal cm0' key={room._id} >
+                    <div className='custommodal cm0' key={room._id} >
                         <div onClick={() => setMarketingRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div class='modal-box'>
+                        <div className='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='mr-bg'> </div>
@@ -153,11 +153,11 @@ export const Salesroom = () => {
             </div>
             {salesroom.map((room) => {
                 return (
-                    <div class='custommodal cm1' key={room._id}>
+                    <div className='custommodal cm1' key={room._id}>
                         <div onClick={() => setSalesRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div class='modal-box'>
+                        <div className='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='sr-bg'> </div>
@@ -221,11 +221,11 @@ export const Boardroom = () => {
             </div>
             {boardroom.map((room) => {
                 return (
-                    <div class='custommodal cm2' key={room._id}>
+                    <div className='custommodal cm2' key={room._id}>
                         <div onClick={() => setBoardRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div class='modal-box'>
+                        <div className='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='br-bg'> </div>
@@ -289,11 +289,11 @@ export const Techroom = () => {
             </div>
             {techroom.map((room) => {
                 return (
-                    <div class='custommodal cm3' key={room._id}>
+                    <div className='custommodal cm3' key={room._id}>
                         <div onClick={() => setTechroom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div class='modal-box'>
+                        <div className='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='tr-bg'> </div>

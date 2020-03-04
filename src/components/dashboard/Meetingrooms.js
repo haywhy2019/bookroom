@@ -62,11 +62,11 @@ export const Marketingroom = () => {
       </div>
       {marketingroom.map((room, index) => {
         return (
-          <div class='custom-modal cm-0' key={index}>
+          <div className='custom-modal cm-0' key={index}>
             <div onClick={() => setMarketingRoom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
-            <div class='modal-box'>
+            <div className='modal-box'>
               <div className='roomdetails container'>
                 <p className='roomheading'>{room.name}</p>
                 <div className='mr-bg'> </div>
@@ -131,11 +131,11 @@ export const Salesroom = () => {
       </div>
       {salesroom.map((room, index) => {
         return (
-          <div class='custom-modal cm-1' key={index}>
+          <div className='custom-modal cm-1' key={index}>
             <div onClick={() => setSalesRoom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
-            <div class='modal-box'>
+            <div className='modal-box'>
               <div className='roomdetails container'>
                 <p className='roomheading'>{room.name}</p>
                 <div className='sr-bg'> </div>
@@ -199,11 +199,11 @@ export const Boardroom = () => {
       </div>
       {boardroom.map((room, index) => {
         return (
-          <div class='custom-modal cm-2' key={index}>
+          <div className='custom-modal cm-2' key={index}>
             <div onClick={() => setBoardRoom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
-            <div  class='modal-box'>
+            <div  className='modal-box'>
               <div className='roomdetails container'>
                 <p className='roomheading'>{room.name}</p>
                 <div className='br-bg'> </div>
@@ -267,12 +267,12 @@ export const Techroom = () => {
       </div>
       {techroom.map((room) => {
         return (
-          <div class='custom-modal cm-3'>
+          <div className='custom-modal cm-3' key={room._id}>
             <div onClick={() => setTechroom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
-            <div class='modal-box'>
-              <div className='roomdetails container' key={room._id}>
+            <div className='modal-box'>
+              <div className='roomdetails container' >
                 <p className='roomheading'>{room.name}</p>
                 <div className='tr-bg'> </div>
                 <div className='roomdescription'>
