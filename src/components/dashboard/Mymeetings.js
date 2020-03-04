@@ -9,7 +9,7 @@ const Mymeetings = () => {
     useEffect( () => {
         const getMyMeeting = async () => {
             try {
-              const response = await axios.get("http://localhost:5000/api/roombookings");
+              const response = await axios.get("https://bookroom-server.herokuapp.com/api/roombookings");
               const responseData = await response.data;
               console.log(responseData);
               const meetingRoom = responseData;
