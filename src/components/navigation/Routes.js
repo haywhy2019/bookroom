@@ -4,6 +4,7 @@ import Dashboard from '../dashboard/Dashboard';
 import Home from '../home/Home';
 import Navbar from '../home/Navbar';
 
+
 const Routes = () => {
     return (
         <Fragment>
@@ -11,7 +12,8 @@ const Routes = () => {
                 <Navbar />
                 <Switch>
                     <div>
-                        <Route path='/' exact component={Home} />
+                        
+                        <Route exact path='/'component={Home} />
                         <Route path='/dashboard/mymeetings' exact component={Dashboard} />
                         <Route path='/dashboard/meetingrooms' exact component={Dashboard} />
                         <Route path='/dashboard/createmeeting' exact component={Dashboard} />
