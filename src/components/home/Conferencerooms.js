@@ -82,13 +82,13 @@ export const Marketingroom = () => {
                     click={getMarketingRoom}
                 />
             </div>
-            {marketingroom.map((room, i) => {
+            {marketingroom.map((room) => {
                 return (
-                    <div class='custommodal cm0'>
+                    <div class='custommodal cm0' key={room._id} >
                         <div onClick={() => setMarketingRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div key={i} class='modal-box'>
+                        <div class='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='mr-bg'> </div>
@@ -151,13 +151,13 @@ export const Salesroom = () => {
                     click={getSalesRoom}
                 />
             </div>
-            {salesroom.map((room, i) => {
+            {salesroom.map((room) => {
                 return (
-                    <div class='custommodal cm1'>
+                    <div class='custommodal cm1' key={room._id}>
                         <div onClick={() => setSalesRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div key={i} class='modal-box'>
+                        <div class='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='sr-bg'> </div>
@@ -219,13 +219,13 @@ export const Boardroom = () => {
                     click={getBoardRoom}
                 />
             </div>
-            {boardroom.map((room, i) => {
+            {boardroom.map((room) => {
                 return (
-                    <div class='custommodal cm2'>
+                    <div class='custommodal cm2' key={room._id}>
                         <div onClick={() => setBoardRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div key={i} class='modal-box'>
+                        <div class='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='br-bg'> </div>
@@ -287,13 +287,13 @@ export const Techroom = () => {
                     click={getTechRoom}
                 />
             </div>
-            {techroom.map((room, i) => {
+            {techroom.map((room) => {
                 return (
-                    <div class='custommodal cm3'>
+                    <div class='custommodal cm3' key={room._id}>
                         <div onClick={() => setTechroom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>
-                        <div key={i} class='modal-box'>
+                        <div class='modal-box'>
                             <div className='roomdetails container'>
                                 <p className='roomheading'>{room.name}</p>
                                 <div className='tr-bg'> </div>

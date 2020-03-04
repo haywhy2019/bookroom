@@ -56,7 +56,7 @@ export const Marketingroom = () => {
         <Button
           name="View details"
           className="viewdetails"
-          //  link='/roomdetails'
+          link='#'
           click={getMarketingRoom}
         />
       </div>
@@ -126,6 +126,7 @@ export const Salesroom = () => {
           name="View details"
           className="viewdetails"
           click={getSalesRoom}
+          link='#'
         />
       </div>
       {salesroom.map((room, index) => {
@@ -192,7 +193,7 @@ export const Boardroom = () => {
         <Button
           name="View details"
           className="viewdetails"
-          //  link='/roomdetails'
+          link='#'
           click={getBoardRoom}
         />
       </div>
@@ -260,18 +261,18 @@ export const Techroom = () => {
         <Button
           name="View details"
           className="viewdetails"
-          //  link='/roomdetails'
+          link='#'
           click={getTechRoom}
         />
       </div>
-      {techroom.map((room, index) => {
+      {techroom.map((room) => {
         return (
-          <div class='custom-modal cm-3' key={index} >
+          <div class='custom-modal cm-3'>
             <div onClick={() => setTechroom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
             <div class='modal-box'>
-              <div className='roomdetails container'>
+              <div className='roomdetails container' key={room._id}>
                 <p className='roomheading'>{room.name}</p>
                 <div className='tr-bg'> </div>
                 <div className='roomdescription'>

@@ -120,6 +120,7 @@ class Booking extends Component {
                       className="booking"
                     name='Book Room'
                     click={this.createMyMeeting}
+                    link='#'
                 />
                 <div> <p className="output">{this.state.bookingStatus}</p></div>
             </div>
