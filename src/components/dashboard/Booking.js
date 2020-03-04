@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '../buttons/Buttons'
+import style from '../buttons/button.module.css'
 import axios from 'axios'
 import './dashboard.css'
 // new
@@ -115,13 +116,11 @@ class Booking extends Component {
                     </div>
 
                     <br />
+                    <button  className={style.booking} onClick={this.createMyMeeting} type= 'submit'>  
+                    Book Room
+                    </button>
                 </form>
-                <Button
-                      className="booking"
-                    name='Book Room'
-                    click={this.createMyMeeting}
-                    link='#'
-                />
+              
                 <div> <p className="output">{this.state.bookingStatus}</p></div>
             </div>
         );
