@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from '../buttons/Buttons'
 import style from '../buttons/button.module.css'
 import axios from 'axios'
 import './dashboard.css'
@@ -14,6 +13,7 @@ class Booking extends Component {
         this.state = {
             meetingTitle: '',
             description: '',
+            bookedBy: '',
             startDate: new Date(),
             bookingStatus: ''
         };
@@ -39,7 +39,8 @@ class Booking extends Component {
     }
 
        
-    createMyMeeting = async () => {
+    createMyMeeting = async (e) => {
+        e.preventDefault();
     let booking = this.state
     console.log(booking)
     try {
@@ -86,6 +87,16 @@ class Booking extends Component {
                         />
                     </label>
                     <br />
+                    <label>Booked By <br />
+                        <input className='book-input'
+                            name="bookedBy"
+                            type="text"
+                            value={this.state.bookedBY}
+                            onChange={this.handleInputChange}
+                            required
+                        />
+                    </label>
+                    <br />
                     <div>
                         <label>Select meeting Room <br />
                             <select value={this.state.room}
@@ -116,7 +127,7 @@ class Booking extends Component {
                     </div>
 
                     <br />
-                    <button  className={style.booking} onClick={this.createMyMeeting} type= 'submit'>  
+                    <button  className={style.booking} onClick={this.createMyMeeting}>  
                     Book Room
                     </button>
                 </form>
