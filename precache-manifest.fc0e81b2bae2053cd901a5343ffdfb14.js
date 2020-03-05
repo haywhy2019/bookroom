@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "730dd00fb95ae25f4dcc2a157717da28",
+    "revision": "9be38ab8e6d808cc4734b2f2dc3aa23e",
     "url": "/bookroom/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookroom/static/css/2.d90538a7.chunk.css"
   },
   {
-    "revision": "a2d19761c93d0907c72e",
+    "revision": "5d0459329d650ba518bd",
     "url": "/bookroom/static/css/main.268b3fd5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bookroom/static/js/2.db923d33.chunk.js.LICENSE"
   },
   {
-    "revision": "a2d19761c93d0907c72e",
-    "url": "/bookroom/static/js/main.dff0045c.chunk.js"
+    "revision": "5d0459329d650ba518bd",
+    "url": "/bookroom/static/js/main.3ecb0be3.chunk.js"
   },
   {
     "revision": "eb7cf2984bbcf61742ac",
