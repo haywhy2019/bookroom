@@ -7,15 +7,12 @@ import Button from '../buttons/Buttons';
 const Footer = () => {
     return (
         <Fragment>
-            <div style={{ height: '150px', margin: '3rem 0 0' }}>
-                <div className={ftr.navigationcontainer}>
+            <div className='footer center-text container-fluid no-mp unlocked section-padding primary-color'>
+                <div className='row'>
                     <Leftfooter
-                        leftfooterclass='leftfooter'
                         logoname='Bookr'
                     />
-                    <Rightfooter
-                        rightfooterclass='rightfooter'
-                    />
+                    <Rightfooter/>
                 </div>
             </div>
         </Fragment>
@@ -25,7 +22,7 @@ const Footer = () => {
 const Leftfooter = (props) => {
     return (
         <Fragment>
-            <div className={ftr[props.leftfooterclass]}>
+            <div className='col-lg-6 leftfooter'>
                 <FooterLogo
                     logoname={props.logoname}
                     logoclass='footerlogo'
@@ -88,10 +85,10 @@ const Social = () => {
     )
 }
 
-const Rightfooter = (props) => {
+const Rightfooter = () => {
     return (
         <Fragment>
-            <div className={ftr[props.rightfooterclass]}>
+            <div className='col-lg-6 rightfooter'>
                 <Subscribe />
                 <Contact />
             </div>

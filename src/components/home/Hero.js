@@ -20,17 +20,22 @@ const Hero = () => {
 const Heading = (props) => {
     return (
         <Fragment>
-            <section className={hero.heading}>
-                <h3>{props.heading}</h3>
-                <section>
-                    <p>{props.subheading}</p>
-                </section>
-                <Button
-                    name='Book room'
-                    className='bookroom'
-                    link='/dashboard/meetingrooms'
-                />
-            </section>
+            <div className='container tp-30'>
+                <div className='row'>
+                    <section className='col-md-12 col-lg-7'>
+                        <div className='heading'>
+                            <h3>{props.heading}</h3>
+                            <p>{props.subheading}</p>
+                        </div>
+                        <Button
+                            name='Book room'
+                            className='bookroom'
+                            link='/dashboard/meetingrooms'
+                        />
+                    </section>
+                </div>
+            </div>
+
         </Fragment>
     )
 }

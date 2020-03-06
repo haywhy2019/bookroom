@@ -200,3 +200,14 @@ button {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
 }
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 360px) {
+    .bookroom {
+        font-size: 1.1rem;
+        width: 150px;
+        height: 45px;
+    }
+}
