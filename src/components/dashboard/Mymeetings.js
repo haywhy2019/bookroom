@@ -39,6 +39,8 @@ const Mymeetings = () => {
                         <p className="card-text">{booked.meetingTitle}</p>
                         <h5  className="card-title">Meeting description</h5>
                         <p className="card-text">{booked.description}</p>
+                        <h5  className="card-title">Booked By</h5>
+                        <p className="card-text">{booked.bookedBy}</p>
                         <h5  className="card-title">Room Name</h5>
                         <p className="card-text">{booked.room}</p>
                         <h5  className="card-title">Time</h5>
