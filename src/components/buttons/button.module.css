@@ -38,31 +38,31 @@ button {
 }
 
 .bookroom {
-    background-color: transparent;
-    margin: 2em 0 0 0;
-    padding: 0;
-    width: 180px;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     height: 50px;
-    border-radius: 3px;
-    border: solid 1px #078f68;
+    width: 150px;
+    background-color: white;
     color: #078f68;
-    font-size: 1.2rem;
-    font-weight: 400;
-    transition: ease-in-out .25s;
-    -webkit-transition: ease-in-out .25s;
-    -moz-transition: ease-in-out .25s;
-    -ms-transition: ease-in-out .25s;
-    -o-transition: ease-in-out .25s;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 115px;
+    left: 22px;
+    transition: cubic-bezier(1, 0.01, 0, 1) 0.5s;
+    -webkit-transition: cubic-bezier(1, 0.01, 0, 1) 0.5s;
+    -moz-transition: cubic-bezier(1, 0.01, 0, 1) 0.5s;
+    -ms-transition: cubic-bezier(1, 0.01, 0, 1) 0.5s;
+    -o-transition: cubic-bezier(1, 0.01, 0, 1) 0.5s;
 }
 
 .bookroom:hover {
-    font-weight: 500;
-    color: #078f68;
-    background-color: white;
-    border: solid 2px transparent;
-    -webkit-box-shadow: inset 1px 1px 90px -48px rgba(7,143,104,1);
-    -moz-box-shadow: inset 1px 1px 90px -48px rgba(7,143,104,1);
-    box-shadow: inset 1px 1px 90px -48px rgba(7,143,104,1);
+    font-size: 19px;
+    background-color: #078f68;
+    color: white;
 }
 
 .bookmeetingroom {
@@ -202,12 +202,3 @@ button {
 }
 
 
-/* MEDIA QUERY */
-
-@media (max-width: 360px) {
-    .bookroom {
-        font-size: 1.1rem;
-        width: 150px;
-        height: 45px;
-    }
-}

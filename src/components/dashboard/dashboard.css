@@ -1,18 +1,18 @@
-.mrcontainer {
-    padding: 0;
-    height: 90vh;
-}
 
-.roomsidebar {
-    height: 87vh;
+
+.dashsidebar {
+    position: fixed;
+    overflow-x: hidden;
+    top: -0;
+    /* left: -360px; */
+    left: 0;
+    width: 320px;
+    height: 100%;
     background-color: #078f68;
-    position: relative;
-    bottom: -10px;
-    left: 10px;
-    border-radius: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 2px 0px 10px -4px black;
+    justify-content: center;
+    z-index: 100;
 }
 
 .pr-dropshadow {
@@ -20,23 +20,21 @@
     padding: 0;
 }
 
-.roomsidebar ul {
+.dashsidebar ul {
     list-style: none;
     width: 95%;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.roomsidebar ul a {
+.dashsidebar ul a {
     font-size: 1rem;
-    line-height: 3.5;
-    height: 3.5rem;
-    width: 50%;
+    line-height: 7;
+    height: 5rem;
+    width: 80%;
     color: white;
     border-bottom: solid 1px #ffffff38;
     transition: ease-in-out .2s;
@@ -46,16 +44,40 @@
     -o-transition: ease-in-out .2s;
 }
 
-.roomsidebar ul a:hover {
+.dashsidebar ul a:hover {
     text-decoration: none;
     font-size: 1.05rem;
 }
 
+.showsidebar {
+    border: none;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-size: 20px;
+    color: #00deaf;
+    background-color: transparent;
+    margin: 15px;
+    padding: 15px;
+    outline: none;
+    z-index: 200;
+}
+
 .headings {
-    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin: 2rem 0;
-    border-bottom: solid 1px #078f6869;
+    margin: 5rem 0 0rem 0;
+    padding: 0 1rem;
+}
+
+.headings p {
+    border-bottom: solid 0.5px #078f6869;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    width: 250px;
+    text-align: center;
 }
 
 .marketingbg {
@@ -129,7 +151,7 @@
         top: 50px;
 }
 
-.row {
+.row.sidebar {
     width: 100%;
 }
 
@@ -215,8 +237,17 @@
 }
 
 .book-container {
-    margin: 2rem 2rem 0;
-    padding: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-container p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .closebtn {
@@ -242,11 +273,13 @@
 }
 
 .book-input {
-    width: 500px;
-    padding: 0.89rem;
-    margin-top: 1rem;
-    border: solid 1px #078f68;
+    height: 50px;
+    border: solid .5px #80808059;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .mr-bg {

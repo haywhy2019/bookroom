@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import ftr from './home.module.css';
 import Button from '../buttons/Buttons';
 
 
@@ -35,9 +34,9 @@ const Leftfooter = (props) => {
 const FooterLogo = (props) => {
     return (
         <Fragment>
-            <div className={ftr[props.logoclass]}>
+            <div className="col-md-4 footerlogo">
                 <h5>{props.logoname}</h5>
-                <p>&copy; copyright BookR, 2019</p>
+                <p>2019</p>
             </div>
             <Navs />
             <Social />
@@ -48,7 +47,7 @@ const FooterLogo = (props) => {
 const Navs = () => {
     return (
         <Fragment>
-            <section>
+            <section className="col-md-4">
                 <ul>
                     <li>
                         <a href='/#'>About Us</a>
@@ -68,16 +67,16 @@ const Navs = () => {
 const Social = () => {
     return (
         <Fragment>
-            <section>
+            <section className="col-md-4">
                 <ul>
                     <li>
-                        <a href="/#" target="_blank"><i className="fa fa-facebook-f"></i> &nbsp; &nbsp; &nbsp; Facebook</a>
+                        <a href="/#" target="_blank"><i className="fa fa-facebook-f"></i><span>Facebook</span></a>
                     </li>
                     <li>
-                        <a href="/#" target="_blank"><i className="fa fa-twitter"></i> &nbsp; &nbsp; Twitter</a>
+                        <a href="/#" target="_blank"><i className="fa fa-twitter"></i><span>Twitter</span></a>
                     </li>
                     <li>
-                        <a href="/#" target="_blank"><i className="fa fa-instagram"></i> &nbsp; &nbsp; Instagram</a>
+                        <a href="/#" target="_blank"><i className="fa fa-instagram"></i><span>Instagram</span></a>
                     </li>
                 </ul>
             </section>
@@ -96,16 +95,6 @@ const Rightfooter = () => {
     )
 }
 
-
-// FUNCTIONAL SUBSCRIBE COMPONENT
-// const Subscribe = () => {
-//     return (
-//         <Fragment>
-//             <input type='form'></input>
-//         </Fragment>
-//     )
-// }
-
 class Subscribe extends React.Component {
     constructor(props) {
         super(props);
@@ -118,12 +107,12 @@ class Subscribe extends React.Component {
 
     render() {
         return (
-            <div>
-                <form className={ftr.contactform} id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <div className="col-md-6">
+                <form className="col-md-12 contactform" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
 
-                    <div className={ftr.formgroup}>
+                    <div className="formgroup">
                         <label htmlFor="exampleInputEmail1">Subscribe to our newsletter</label>
-                        <input type="email" className={ftr.formcontrol} aria-describedby="emailHelp" placeholder="Email Address" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                        <input type="email" className="formcontrol" aria-describedby="emailHelp" placeholder="Email Address" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
                     </div>
 
                     <Button
@@ -147,7 +136,7 @@ class Subscribe extends React.Component {
 const Contact = () => {
     return (
         <Fragment>
-            <div className={ftr.contact}>
+            <div className="col-md-6 contact">
                 <p>497 Evergreen Rd. Roseville, CA 95673<br />+44 345 678 903<br />conferenceroom@mail.com</p>
             </div>
 

@@ -38,37 +38,37 @@ class Booking extends Component {
         // console.log(this.state)
     }
 
-       
+
     createMyMeeting = async (e) => {
         e.preventDefault();
-    let booking = this.state
-    console.log(booking)
-    try {
-        const response = await axios.post("https://bookroom-server.herokuapp.com/api/roombookings", booking);
-        const responseData = await response.data;
-        const bookingResponse = responseData;
-        let arr = [];
-        arr.push(bookingResponse)
-        console.log(arr)
-        this.setState({bookingStatus:arr.map(status => status.message)})
-        console.log(bookingResponse); 
-    } catch (error) {
-        console.error(error);
-    }  
-          
+        let booking = this.state
+        console.log(booking)
+        try {
+            const response = await axios.post("https://bookroom-server.herokuapp.com/api/roombookings", booking);
+            const responseData = await response.data;
+            const bookingResponse = responseData;
+            let arr = [];
+            arr.push(bookingResponse)
+            console.log(arr)
+            this.setState({ bookingStatus: arr.map(status => status.message) })
+            console.log(bookingResponse);
+        } catch (error) {
+            console.error(error);
+        }
+
     }
 
-    
-    
+
+
 
     render() {
         return (
-            <div className='book-container'>
+            <div className='container book-container'>
                 <p>New Booking</p>
-                <form>
-                    <label>
+                <form className='col-md-6'>
+                    <label className='col-md-12'>
                         Meeting Title <br />
-                        <input className='book-input'
+                        <input className='col-md-12 book-input'
                             name="meetingTitle"
                             type="text"
                             value={this.state.meetingTitle}
@@ -77,8 +77,8 @@ class Booking extends Component {
                         />
                     </label>
                     <br />
-                    <label>Description <br />
-                        <input className='book-input'
+                    <label className='col-md-12'>Description <br />
+                        <input className='col-md-12 book-input'
                             name="description"
                             type="text"
                             value={this.state.description}
@@ -87,8 +87,8 @@ class Booking extends Component {
                         />
                     </label>
                     <br />
-                    <label>Booked By <br />
-                        <input className='book-input'
+                    <label className='col-md-12'>Booked By <br />
+                        <input className='col-md-12 book-input'
                             name="bookedBy"
                             type="text"
                             value={this.state.bookedBY}
@@ -98,12 +98,12 @@ class Booking extends Component {
                     </label>
                     <br />
                     <div>
-                        <label>Select meeting Room <br />
+                        <label className='col-md-12'>Select meeting Room <br />
                             <select value={this.state.room}
                                 onChange={this.handleInputChange}
-                                name='room' className='book-input'
+                                name='room' className='col-md-12 book-input'
                                 required
-                                >
+                            >
                                 <option value="">  ---select room---  </option>
                                 <option value="board room">Board Room</option>
                                 <option value="marketing room">Marketing Room</option>
@@ -112,7 +112,7 @@ class Booking extends Component {
                             </select>
                         </label>
                         <br />
-                        <label>Date & Time <br />
+                        <label className='col-md-12'>Date & Time <br />
                             <DatePicker
                                 selected={this.state.startDate}
                                 onChange={this.onChange}
@@ -127,12 +127,14 @@ class Booking extends Component {
                     </div>
 
                     <br />
-                    <button  className={style.booking} onClick={this.createMyMeeting}>  
-                    Book Room
+                    <button className={style.booking} onClick={this.createMyMeeting}>
+                        Book Room
                     </button>
                 </form>
-              
-                <div> <p className="output">{this.state.bookingStatus}</p></div>
+
+                <div>
+                    <p className="output">{this.state.bookingStatus}</p>
+                </div>
             </div>
         );
     }

@@ -71,24 +71,6 @@
     width: 100%;
 }
 
-/* .heading {
-    position: relative;
-    top: 30%;
-    left: 150px;
-} */
-
-/* .heading h3 {
-    color: white;
-}
-
-.heading section {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: white;
-    border-left: solid 2px white;
-    padding-left: 45px;
-} */
-
 .rooms {
     display: flex;
     justify-content: space-between;
@@ -113,8 +95,9 @@
 
 .meetingroominfo h4 {
     border-bottom: solid 1px #078f68;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     padding-bottom: 1rem;
+    width: 220px;
 }
 
 .meetingroominfo p {
@@ -125,7 +108,7 @@
     text-align: center;
     margin: 5rem 0;
     font-size: 1.7rem;
-    letter-spacing: 2px;
+    letter-spacing: -1.1px;
 }
 
 .roomthumbnails {
@@ -277,7 +260,6 @@
 }
 
 .leftfooter {
-    width: 50%;
     background-color: rgb(7, 143, 104);
     display: flex;
     align-items: center;
@@ -286,74 +268,16 @@
 
 .leftfooter section ul {
     list-style: none;
+    padding: 0;
 }
 
-.leftfooter section ul li a {    
-    color: white;
-}
+
 
 .rightfooter {
-    width: 50%;
     background-color: rgb(7, 143, 104);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.footerlogo {
-    width: 100px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.footerlogo h5 {
-    color:white;
-}
-
-.footerlogo p {
-    font-size: 0.6rem;
-    color:white;
-}
-
-.contactform {
-    display: flex;
-    align-items: center;
-}
-
-.formcontrol {
-    margin-bottom: 2rem;
-    border: solid 1px white;
-    width: 220px;
-    border-radius: 2px;
-    background-color: transparent;
-}
-
-.formcontrol::placeholder {
-    color: white;
-}
-
-.formgroup {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.formgroup input {
-    padding: 0.4rem;
-}
-
-.formgroup label {
-    color: white;
-}
-
-.contact {
-    font-size: 0.9rem;
-}
-
-.contact p {
-    color: white;
-}
