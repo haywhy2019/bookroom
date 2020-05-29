@@ -31,7 +31,7 @@ function App() {
   const routeSwitch = (
     Routes.map(route => {
       const { component, path } = route;
-      console.log(route);
+      // console.log(route);
       return (<Route component={component} exact key={path} path={path} />);
     })
   );
