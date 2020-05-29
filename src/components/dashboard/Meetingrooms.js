@@ -11,15 +11,17 @@ import { AiOutlineClose } from 'react-icons/ai';
 const MeetingRooms = () => {
   return (
     <Fragment>
-      <div className="headings">
-        <p>Select a meeting room</p>
-      </div>
-      <div className="meetingrooms">
-        <div className="roomthumbnails">
-          <Marketingroom />
-          <Salesroom />
-          <Boardroom />
-          <Techroom />
+      <div className='container'>
+        <div className="headings">
+          <p>Select a meeting room</p>
+        </div>
+        <div className="meetingrooms">
+          <div className="roomthumbnails">
+            <Marketingroom />
+            <Salesroom />
+            <Boardroom />
+            <Techroom />
+          </div>
         </div>
       </div>
     </Fragment>
@@ -203,7 +205,7 @@ export const Boardroom = () => {
             <div onClick={() => setBoardRoom([])} className='closebtn'>
               <AiOutlineClose />
             </div>
-            <div  className='modal-box'>
+            <div className='modal-box'>
               <div className='roomdetails container'>
                 <p className='roomheading'>{room.name}</p>
                 <div className='br-bg'> </div>

@@ -84,7 +84,7 @@ export const Marketingroom = () => {
             </div>
             {marketingroom.map((room) => {
                 return (
-                    <div className='custommodal cm0' key={room._id} >
+                    <div className='custommodal cm0' key={room._id}>
                         <div onClick={() => setMarketingRoom([])} className='closebtn'>
                             <AiOutlineClose />
                         </div>

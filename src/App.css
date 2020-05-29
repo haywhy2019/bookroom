@@ -2,6 +2,10 @@ html {
   font-size: 15px;
 }
 
+button:focus {
+  outline: none;
+}
+
 .App {
   font-family: 'Rubik', sans-serif;
 }
@@ -124,19 +128,81 @@ html {
   justify-content: space-evenly;
 }
 
+.footerlogo {
+  width: 100px;
+}
+
+.footerlogo h5 {
+  color:white;
+}
+
+.footerlogo p {
+  font-size: 0.8rem;
+  color:white;
+}
+
 .leftfooter section ul {
   list-style: none;
   text-align: left;
+  padding: 0;
+}
+
+.leftfooter a {    
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.leftfooter a i {
+  padding-right: 10px;
 }
 
 .rightfooter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.footer a {
+.contact {
+  font-size: 0.9rem;
+}
+
+.contact p {
   color: white;
+}
+
+.contactform {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.formcontrol {
+    margin-bottom: 2rem;
+    border: solid 1px white;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.formcontrol::placeholder {
+    color: white;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.formgroup input {
+    padding: 0.4rem;
+}
+
+.formgroup label {
+    color: white;
+    text-align: left;
 }
 
 /* MEDIA QUERY */
