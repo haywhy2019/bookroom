@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "./dashboard.css";
 import Button from "../buttons/Buttons";
-// import { getSalesRoom } from "../functions/Functions";
 import axios from "axios";
-// import Booking from '../dashboard/Booking';
 import { GoDeviceDesktop } from 'react-icons/go';
 import { IoLogoGameControllerB } from 'react-icons/io';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -38,13 +36,13 @@ export const Marketingroom = () => {
   const getMarketingRoom = async () => {
     try {
       const response = await axios.get("https://bookroom-server.herokuapp.com/allRooms");
-      console.log(response);
+      // console.log(response);
       const responseData = await response.data;
-      console.log(responseData);
+      // console.log(responseData);
       const marketingroomData = responseData[1];
       let arr = [];
       arr.push(marketingroomData);
-      console.log(arr);
+      // console.log(arr);
 
       setMarketingRoom(arr);
     } catch (error) {
@@ -84,7 +82,6 @@ export const Marketingroom = () => {
                   <Button
                     link='/dashboard/createmeeting'
                     className='bookmeetingroom'
-                    // click={}
                     name='Book meeting room'
                   />
                 </div>
@@ -107,13 +104,13 @@ export const Salesroom = () => {
   const getSalesRoom = async () => {
     try {
       const response = await axios.get("https://bookroom-server.herokuapp.com/allRooms");
-      console.log(response);
+      // console.log(response);
       const responseData = await response.data;
-      console.log(responseData);
+      // console.log(responseData);
       const salesroomData = responseData[0];
       let arr = [];
       arr.push(salesroomData);
-      console.log(arr);
+      // console.log(arr);
 
       setSalesRoom(arr);
     } catch (error) {
@@ -175,13 +172,13 @@ export const Boardroom = () => {
   const getBoardRoom = async () => {
     try {
       const response = await axios.get("https://bookroom-server.herokuapp.com/allRooms");
-      console.log(response);
+      // console.log(response);
       const responseData = await response.data;
-      console.log(responseData);
+      // console.log(responseData);
       const boardroomData = responseData[2];
       let arr = [];
       arr.push(boardroomData);
-      console.log(arr);
+      // console.log(arr);
 
       setBoardRoom(arr);
     } catch (error) {
@@ -243,13 +240,13 @@ export const Techroom = () => {
   const getTechRoom = async () => {
     try {
       const response = await axios.get("https://bookroom-server.herokuapp.com/allRooms");
-      console.log(response);
+      // console.log(response);
       const responseData = await response.data;
-      console.log(responseData);
+      // console.log(responseData);
       const techroomData = responseData[3];
       let arr = [];
       arr.push(techroomData);
-      console.log(arr);
+      // console.log(arr);
 
       setTechroom(arr);
     } catch (error) {

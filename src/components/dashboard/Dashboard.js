@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import './dashboard.css';
 import Meetingrooms from './Meetingrooms';
 import Mymeetings from './Mymeetings';
@@ -42,7 +42,7 @@ const Dashboard = () => {
                             <div className='col-md-12'>
                                 <Switch>
                                     {routes.map((routes, index) => (
-                                        <Route key={index} path={routes.path} exact={routes.exact} children={<routes.main />} />
+                                        <Route key={index} path={routes.path} exact={routes.exact} children={routes.main} />
                                     ))}
                                 </Switch>
                             </div>
@@ -55,37 +55,27 @@ const Dashboard = () => {
 }
 
 const Sidebar = () => {
-    useEffect(() => {
-        console.log('open')
-        return () => {
-            console.log('close')
-        }
-    }, []);
     return (
-        <Router>
-            <div className='dashsidebar'>
-                <div className='row sidebar'>
-                    <div className='col-md-12'>
-                        <ul>
-                            <Link to='/dashboard/mymeetings'>
-                                <li>Booked Meetings</li>
-                            </Link>
-                            < Link to='/dashboard/meetingrooms'>
-                                <li>Meeting rooms</li>
-                            </Link>
-                            <Link to='/dashboard/createmeeting'>
-                                <li>Create a Meeting</li>
-                            </Link>
-                        </ul>
-                    </div>
-                    <Switch>
-                        {routes.map((route, index) => (
-                            <Route key={index} path={route.path} exact={route.exact} />
-                        ))}
-                    </Switch>
+        <div className='dashsidebar'>
+            <div className='row sidebar'>
+                <div className='col-md-12'>
+                    <ul>
+                        <Link to='/dashboard/mymeetings'>
+                            <li>Booked Meetings</li>
+                        </Link>
+                        < Link to='/dashboard/meetingrooms'>
+                            <li>Meeting rooms</li>
+                        </Link>
+                        <Link to='/dashboard/createmeeting'>
+                            <li>Create a Meeting</li>
+                        </Link>
+                    </ul>
+                    {routes.map((route, index) => (
+                        <Route key={index} path={route.path} exact={route.exact} />
+                    ))}
                 </div>
             </div>
-        </Router>
+        </div>
     )
 }
 
